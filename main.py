@@ -1,9 +1,13 @@
 import csv
 import os
+import sys
 from xml.etree.ElementTree import Element, SubElement
 from xml.etree import ElementTree
 from xml.dom import minidom
 import datetime
+
+# Spremeni pot v trenuten directory kjer se nahaja skripta
+os.chdir(sys.path[0])
 
 usd_eur = {}
 rows = []
